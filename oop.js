@@ -130,17 +130,17 @@ console.log(order30.toString());
 
 // LISTA CLIENTI:
 
-const client1 = new Client ("Pietro", "Viglino", 1988, "Via Balbi 22", [order1, order2, order3]);
-const client2 = new Client ("Valerio", "D'Alessio", 1994, "Via Bozzano 2R", [order4, order5]);
-const client3 = new Client ("Luca", "Giovani", 1995, "Via Bolzaneto 2/3", [order6, order7, order8]);
-const client4 = new Client ("Paolo", "Odino", 1965, "Via Savignone 14R", [order9, order10, order11]);
-const client5 = new Client ("Gilberto", "Costa", 1969, "Via Braia 3/3", [order12, order13, order14]);
-const client6 = new Client ("Robert", "Baraldi", 1974, "Via Semolina 15M", [order15, order16]);
-const client7 = new Client ("Gianluca", "Calafato", 1988, "Via Tortora 1/3", [order17, order18]);
-const client8 = new Client ("Filippo", "Montaldo", 1971, "Via xx Settembre 2R", [order19, order20, order21]);
-const client9 = new Client ("Luca", "Rossi", 1982, "Via Smeraldo 15/2", [order22, order23, order24]);
-const client10 = new Client ("Stefano", "Villanuova", 1978, "Via San Bernardo 12M", [order25, order26, order27, order28]);
-const client11 = new Client ("Zeb89", "Aonna", 1969, "Via Lezzo xx", [order29, order30]);
+const client1 = new Client ("Alice", "Bianchi", "7/10/1988", "Via Balbi 22", [order1, order2, order3]);
+const client2 = new Client ("Valerio", "D'Alessio", "15/12/1994", "Via Bozzano 2R", [order4, order5]);
+const client3 = new Client ("Luca", "Giovani", "7/07/1995", "Via Bolzaneto 2/3", [order6, order7, order8]);
+const client4 = new Client ("Paolo", "Odino", "14/09/1965", "Via Savignone 14R", [order9, order10, order11]);
+const client5 = new Client ("Gilberto", "Costa", "12/03/1969", "Via Braia 3/3", [order12, order13, order14]);
+const client6 = new Client ("Roberto", "Baraldi", "23/05/1978", "Via Semolina 15M", [order15, order16]);
+const client7 = new Client ("Antonella", "Calafato", "1/03/1965", "Via Tortora 1/3", [order17, order18]);
+const client8 = new Client ("Filippo", "Montaldo", "18/06/1972", "Via XX Settembre 2R", [order19, order20, order21]);
+const client9 = new Client ("Luca", "Rossi", "7/10/1982", "Via Smeraldo 15/2", [order22, order23, order24]);
+const client10 = new Client ("Stefano", "Villanuova", "13/01/1980", "Via San Bernardo 12M", [order25, order26, order27, order28]);
+const client11 = new Client ("Zeb89", "Aonna", "6/09/1989", "Via Lezzo xx", [order29, order30]);
 
 console.log(client1);
 console.log(client2);
@@ -190,10 +190,10 @@ console.log(client11.totalOrdersPrice());
 
 // LISTA IMPIEGATI AZIENDALI:
 
-const employee1 = new Employee ("Edoardo", "Di Francesco", 1986, [client1, client2, client3]);
-const employee2 = new Employee ("Sara", "Gastaldi", 1993, [client4, client5, client6]);
-const employee3 = new Employee ("Lidia", "Verdi", 1990, [client7, client8, client9]);
-const employee4 = new Employee ("Antonio", "Prati", 1987, [client10, client11]);
+const employee1 = new Employee ("Edoardo", "Di Francesco", "20/05/1988", [client1, client2, client3]);
+const employee2 = new Employee ("Sara", "Gastaldi", "3/11/1993", [client4, client5, client6]);
+const employee3 = new Employee ("Lidia", "Verdi", "21/07/1990", [client7, client8, client9]);
+const employee4 = new Employee ("Antonio", "Prati", "6/04/1986", [client10, client11]);
 
 console.log(employee1);
 console.log(employee2);
@@ -222,9 +222,10 @@ console.log(employee4.toString());
 
 // MANAGER:
 
-const manager = new Manager ("Irene", "Balbi", 1986, [employee1, employee2, employee3, employee4]);
+const manager = new Manager ("Irene", "Balbi", "2/04/1986", [employee1, employee2, employee3, employee4]);
 
 console.log(manager.toString());
 console.log(manager.totalEmployees());
 console.log(manager.totalClients());
 console.log(manager.totalEarnings());
+
