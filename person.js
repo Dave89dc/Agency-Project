@@ -11,9 +11,9 @@ class Person {
     };
 
     toString () {
-        return ("NOME E COGNOME: " + this.name + " " + this.surname + '\n' +
-        "DATA DI NASCITA: " + this._dob) + '\n' +
-        "ETà: " + this.getAge() + '\n' +
+        return ("Nome e Cognome: " + this.name + " " + this.surname + '\n' +
+        "Data di nascita: " + this._dob) + '\n' +
+        "Età: " + this.getAge() + '\n' +
         this.isBirthDay();
     };
 

@@ -7,9 +7,9 @@ class Manager extends Person {
 
     toString () {
         return (super.toString() + '\n' +
-        "IMPIEGATI: " + this.totalEmployees() + '\n' +
-        "CLIENTI: " + this.totalClients() + '\n' +
-        "GUADAGNI TOTALI: " + this.totalEarnings() + '€');
+        "Impiegati: " + this.totalEmployees() + '\n' +
+        "Clienti: " + this.totalClients() + '\n' +
+        "Guadagni totali: " + this.totalEarnings().toFixed(2) + '€');
     };
 
     totalEmployees () {

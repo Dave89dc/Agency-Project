@@ -7,9 +7,9 @@ class Employee extends Person {
 
     toString () {
         return (super.toString() + '\n' +
-        "NUMERO CLIENTI: " + this.sumClients() + '\n' +
-        "GUADAGNO TOTALE: " + this.totalEarnings() + '€' + '\n' +
-        '\n' + "MIGLIOR CLIENTE: " + '\n'+
+        "Numero clienti: " + this.sumClients() + '\n' +
+        "Guadagno totale: " + this.totalEarnings().toFixed(2) + '€' + '\n' +
+        '\n' + "Miglior cliente: " + '\n'+
         this.bestClient());
     };
 

@@ -8,16 +8,20 @@ class Client extends Person {
 
     toString() {
         return (super.toString() + '\n' +
-        "INDIRIZZO: " + this.address + '\n' +
-        "NUMERO ORDINI: " + this.addOrders() + '\n' +
-        "SPESA TOTALE: " + this.totalOrdersPrice()  + "€" + '\n' +
-        "LISTA ORDINI:" + '\n' +
+        "Indirizzo: " + this.address + '\n' +
+        "Numero ordini: " + this.sumOfOrders() + '\n' +
+        "Spesa totale: " + this.totalOrdersPrice().toFixed(2) + "€" + '\n' +
+        "Lista ordini:" + '\n' +
         this.listOfOrders() +
         "-------------------------------------");
     };
 
-    addOrders () {
+    sumOfOrders () {
         return this.orders.length;
+    };
+
+    addOrders (newOrder) {
+        this.orders.push(newOrder);
     };
 
     listOfOrders () {
@@ -42,5 +46,14 @@ class Client extends Person {
         };
         return sum;
     };
+
+    // VERSIONE REDUCE DI totalOrdersPrice:
+
+    // totalOrdersPrice () {
+    //     return this.orders.reduce((previous, current) => {
+    //         previous += current.totalPrice();
+    //         return previous;
+    //     }, 0) ;
+    // };
 
 };

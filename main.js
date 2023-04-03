@@ -170,9 +170,9 @@ console.log(client11.toString());
 
 // ORDINI EFFETTUATI
 
-console.log(client1.addOrders());
-console.log(client2.addOrders());
-console.log(client3.addOrders());
+console.log(client1.sumOfOrders());
+console.log(client2.sumOfOrders());
+console.log(client3.sumOfOrders());
 
 // SPESE TOTALI DEI CLIENTI:
 

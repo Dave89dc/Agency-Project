@@ -7,10 +7,10 @@ class Order {
     };
 
     toString () {
-        return ("PRODOTTO: " + this.product + '\n' +
-        "QUANTITà: " + this.quantity + '\n' +
-        "COSTO UNITARIO: " + this.unitPrice + "€" + '\n' +
-        "COSTO TOTALE: " + this.totalPrice() + "€"); 
+        return ("Prodotto: " + this.product + '\n' +
+        "Quantità: " + this.quantity + '\n' +
+        "Prezzo unitario: " + this.unitPrice.toFixed(2) + "€" + '\n' +
+        "Costo totate: " + this.totalPrice().toFixed(2) + "€"); 
     };
 
     totalPrice () {
