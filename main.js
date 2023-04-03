@@ -229,3 +229,49 @@ console.log(manager.totalEmployees());
 console.log(manager.totalClients());
 console.log(manager.totalEarnings());
 
+
+
+// ESEMPI DI UTILITY:
+
+
+const numbers = [3, 4, 5, 9];
+
+function isEven (element) {
+    return element %2 === 0;
+};
+
+console.log(Utility.filter(numbers, (element) => element > 4));
+console.log(Utility.filter(numbers, isEven));
+
+
+function multiplyBy3 (element) {
+    return element * 3;
+};
+
+console.log(Utility.map(numbers, (element) => element*2)); // lambda
+console.log(Utility.map(numbers, multiplyBy3)); // richiamando la funzione
+console.log(Utility.map(numbers, function (element) {return element * 6})); // funzione anonima
+
+
+function sum (number1, number2) {
+    return number1 + number2;
+}
+
+console.log(Utility.reduce(numbers, sum, 3));
+
+// La reduce è talmente potente che può sostituire sia la map che la filter:
+
+// ECCO GLI ESEMPI; MA SONO PORCATE!!!!
+
+// console.log(Utility.reduce(numbers, (accumulator, current) => {
+//     if (current % 2 === 0) {
+//         accumulator.push(current);
+//     };
+//     return accumulator;
+// }, []));
+
+// console.log(Utility.reduce(numbers, (accumulator, current) => {
+//     const newCurrent = current * 3;
+//     accumulator.push(newCurrent);
+//     return accumulator;
+// }, []));
